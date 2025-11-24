@@ -1,0 +1,8 @@
+output_bucket: cse472firespreadprediction
+rectangular_size: 0.5
+year: 2019
+fire_23410601:
+  latitude: 37.60596160812334
+  longitude: -119.93389044199876
+  start: 2019-10-06
+  end: 2019-10-12
