@@ -12,16 +12,17 @@ if __name__ == '__main__':
 
     # TODO: Enter your desired config file path here. If you just want to recreate the results from the paper, 
     # use the config files in the config folder to download the data belonging to the specified year. 
-    with open("C:\\Users\\liamm\\Downloads\\WildfireSpreadTSCreateDataset-master\\WildfireSpreadTSCreateDataset-master\\config\\us_fire_proj2_1e7.yml", "r", encoding="utf8") as f:
+    with open("path to desired .yml file here", "r", encoding="utf8") as f:
 
         config = yaml.load(f, Loader=yaml.FullLoader)
 
     # TODO: Enter your gcloud key file path here.
-    key_file = 'C:\\Users\\liamm\\Downloads\\WildfireSpreadTSCreateDataset-master\\wildfire-spread-visualizer-879ca7d4ff12.json'
-    project_id = 'wildfire-spread-visualizer'
+    key_file = 'path here'
+    # TODO: Enter your project name here.
+    project_id = 'project name'
 
     # TODO: Enter your gcloud service account here.
-    service_account = 'earthengine-access@wildfire-spread-visualizer.iam.gserviceaccount.com'
+    service_account = 'serviceaccount@example.iam.gserviceaccount.com'
     credentials = ee.ServiceAccountCredentials(service_account, key_file)
     ee.Initialize(credentials, project=project_id)
     
